@@ -1,17 +1,29 @@
 {
-  "id": "modid",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
-  "version": "1.0.0",
-  "side": "universal",
-  "initializers": [
-    "com.github.draylar.modid.ExampleMod"
+  "schemaVersion": 1,
+  "id": "target-dummy",
+  "version": "1.0.1",
+
+  "name": "Target Dummy",
+  "description": "Adds in a Target Dummy to the game which tells you how much damage you're doing per hit.",
+  "authors": [
+    "Draylar"
   ],
-  "requires": {
-    "fabric": "*"
+
+  "license": "GPLv3",
+  "icon": "assets/target-dummy/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.draylar.targetdummy.TargetDummy"
+    ],
+    "client": [
+      "com.github.draylar.targetdummy.TargetDummyClient"
+    ]
   },
-  "mixins": {
-    "client": "modid.client.json",
-    "common": "modid.common.json"
+
+  "requires": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
   }
 }
