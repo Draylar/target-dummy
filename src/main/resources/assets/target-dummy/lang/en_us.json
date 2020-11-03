@@ -1,3 +1,4 @@
 {
-  "item.target-dummy.target_dummy": "Target Dummy"
+  "item.target-dummy.target_dummy": "Target Dummy",
+  "entity.target-dummy.target_dummy": "Target Dummy"
 }

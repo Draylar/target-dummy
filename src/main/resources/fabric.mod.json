@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "target-dummy",
-  "version": "1.0.1",
+  "version": "${version}",
 
   "name": "Target Dummy",
   "description": "Adds in a Target Dummy to the game which tells you how much damage you're doing per hit.",
@@ -9,16 +9,16 @@
     "Draylar"
   ],
 
-  "license": "GPLv3",
+  "license": "MIT",
   "icon": "assets/target-dummy/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.draylar.targetdummy.TargetDummy"
+      "draylar.targetdummy.TargetDummy"
     ],
     "client": [
-      "com.github.draylar.targetdummy.TargetDummyClient"
+      "draylar.targetdummy.TargetDummyClient"
     ]
   },
 
